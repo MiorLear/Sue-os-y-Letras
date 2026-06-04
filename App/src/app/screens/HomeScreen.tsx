@@ -188,7 +188,7 @@ export function HomeScreen() {
               </div>
             ))}
           </div>
-          <OutlineButton label="Ver Calendario" icon={<Calendar size={14} />} onClick={() => {}} />
+          <OutlineButton label="Ver Calendario" icon={<Calendar size={14} />} onClick={() => navigate("/calendar")} />
         </section>
 
         <div className="h-2" />

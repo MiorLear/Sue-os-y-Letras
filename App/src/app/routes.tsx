@@ -8,6 +8,8 @@ import { ForgotPasswordScreen } from "./screens/ForgotPasswordScreen";
 import { ProfileScreen }        from "./screens/ProfileScreen";
 import { FAQScreen }            from "./screens/FAQScreen";
 import { ForoScreen }           from "./screens/ForoScreen";
+import { CalendarScreen }       from "./screens/CalendarScreen";
+import { Toaster }              from "./components/ui/sonner";
 
 function Root() {
   return (
@@ -18,6 +20,7 @@ function Root() {
       <div className="w-full max-w-sm min-h-screen flex flex-col bg-[#F5FEFE] relative shadow-2xl overflow-hidden">
         <Outlet />
       </div>
+      <Toaster />
     </div>
   );
 }
@@ -49,6 +52,7 @@ export const router = createBrowserRouter([
       { path: "profile",              Component: ProfileScreen        },
       { path: "faq",                  Component: FAQScreen            },
       { path: "foro",                 Component: ForoScreen           },
+      { path: "calendar",             Component: CalendarScreen       },
       { path: "*",                    Component: NotFound             },
     ],
   },
